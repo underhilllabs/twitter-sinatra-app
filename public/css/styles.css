@@ -1,0 +1,12 @@
+div.navbar {
+  background: #161616;
+  padding: 1em;
+  margin: 0em;
+  width: 100%;
+}
+div.main_content {
+  padding: 1em;
+}
+body {
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+<h3>Here are your missing followers</h3>
+<%= @nonfollowers.count %> total.
+<ul>
+<% @nonfollowers.each do |unf| %>
+  <li><a href="http://twitter.com/<%= unf.screen_name %>"><%= unf.screen_name %></a>(<%= unf.name %>)</li>
+<% end %>
+</ul>
+  
+<h3>Here are the followers you're too good to follow back</h3>
+<%= @nonfollowing.count %> total.
+<ul>
+<% @nonfollowing.each do |unf| %>
+  <li><a href="http://twitter.com/<%= unf.screen_name %>"><%= unf.screen_name %></a> (<%= unf.name %>)</li>
+<% end %>
+</ul>
