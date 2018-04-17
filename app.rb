@@ -15,6 +15,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/" do
+    expires 3600, :public, :must_revalidate
     followers = @client.followers
     friends = @client.following
     follower_ids = followers.collect { |f| f.id }
